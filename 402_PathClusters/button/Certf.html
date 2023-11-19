@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certification</title>
+    <link rel="stylesheet" href="../css/pc.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <header>
+            
+            <nav>
+                <div class="logo">PathClusters</div>
+                <div class="men">              
+                        <li><a href="../indexx.html">HOME</a></li>
+                        <li><a href="../about.html">ABOUT US</a></li>
+                           
+                </div>  
+                </div>
+            </nav>    
+            <div class="contents">
+
+                <h1>COURSES WITH CERTIFICATION</h1>
+                <p>Given below are some of the courses provided by various online websites <br> that also offer a certificate on completion.</p>
+                </div>         
+        </header>
+    </section>
+    <section class="post-content post-container">
+      <h2 class="sub-heading">FREE & PAID COURSES</h2>
+      <p class="post-text">Given below are some of the platforms that provide free as well as paid courses. After completion of these courses you will get a certificate stating that you have knowledge
+        reguarding the said subject or that you've acquired the said skill<br>Please Click on the dropbox below to acess the data provided.</p>
+        </p>
+    </section>
+    <section>
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">Courses</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="https://www.codecademy.com/">Codeacademy</a> </a></li>
+                <li><a href="https://www.coursera.org/">Coursera</a> </a></li>
+                <li><a href="https://aws.amazon.com/">AWS</a> </a></li>
+                <li><a href="https://www.freecodecamp.org/">Freecodecamp</a> </a></li>
+                <li><a href="https://www.khanacademy.org/">KhanAcademy</a> </a></li>
+                <li><a href="https://www.udacity.com/courses/all">Udacity</a> </a></li>
+                <li><a href="https://www.edx.org/?gclid=CjwKCAjww7KmBhAyEiwA5-PUSoamQlaoRMnzr49XPerXjatWSxwaQ7p-L38QRAM8YCtXiqc2Vwt89hoCzLIQAvD_BwE">edX</a></li>
+                <li><a href="https://www.coursera.org/">Coursera</a> </a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a> </a></li>
+                </ul>
+                <br> <br> <br> <br> 
+                <br> <br> <br> <br> 
+                <br> <br> <br> <br> 
+                <br> <br> <br> <br> 
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.0.js">  </script>
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("nav").addClass("black");
+            }
+            else{
+                $("nav").removeClass("black");
+            }
+        });
+
+        const dropdowns=document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            const select = dropdown.querySelector('.select');
+            const caret = dropdown.querySelector('.caret');
+            const menu = dropdown.querySelector('.menu');
+            const options = dropdown.querySelector('.menu li');
+            const selected = dropdown.querySelector('.selected');
+             
+            select.addEventListener('click', ()=> {
+                select.classList.toggle('select-clicked');
+                caret.classList.toggle('caret-rotate');
+                menu.classList.toggle('menu-open');
+            });
+            options.forEach(option => {
+                option.addEventListener('click', ()=> {
+                    slelected.innerText=option.innerText;
+                    slelect.innerText=option.innerText;
+                    select.classList.remove('select-clicked');
+                    caret.classList.remove('caret-rotate');
+                    select.classList.remove('menu-option');
+                    options.forEach(option=> {
+                        option.classList.add('active');
+                    });
+                });
+            });
+        });
+
+    </script>
+<div class="footerContainer">
+    <div class="socialicon">
+        <a href="https://instagram.com/pathclusters?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com/pathclusters?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://instagram.com/pathclusters?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+<div class="footernav">
+    <ul>
+        <li><a href="../indexx.html">Home</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../button/team.html">Our Team</a></li>
+        <li><a>Contact Us @pathclusters@gmail.com</a></li>
+    </ul>
+</div>   
+<div class="footerbottom">
+    <p>Copyright &copy;2023; Designed by <span class="designer">Team TechTitans</span></p>
+</div>        
+</div>
+</body>
+</html>
